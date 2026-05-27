@@ -14,7 +14,7 @@ const PRIVATE_VAPID_KEY = process.env.PRIVATE_VAPID_KEY;
 
 if (PUBLIC_VAPID_KEY && PRIVATE_VAPID_KEY) {
     webpush.setVapidDetails(
-        'willie0eilliw@gmail.com', // 可以換成您的電子信箱
+        'mailto:willie0eilliw@gmail.com', // 可以換成您的電子信箱
        'BOqI-NMOQANwPM44bvi_XXkbaTaI4htRS4tooJcDD8MY6u2fJwNnnhl_RvjJNsdlXEuiodPQMzJMlhg961gJrzw',
         'aYV7hfV0vnaUaWCmJxB0ZVbuwTh4F_s4Jq7bUtlPD_s'
     );

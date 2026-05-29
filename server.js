@@ -114,8 +114,8 @@ async function checkPrices() {
                 startDateObj.setMonth(startDateObj.getMonth() - periodMonths);
                 const startDate = startDateObj.toISOString().split('T')[0];
 
-                const historyRes = await axios.get(`https://api.fugle.tw/marketdata/v1.0/stock/historical/candles/${symbol}`, {
-                    params: { from: startDate, to: endDate },
+                const historyRes = await axios.get(`https://api.fugle.tw/marketdata/v1.0/stock/historical/candles`, {
+                    params: { symbol: symbol, from: startDate, to: endDate }, //修改
                     headers: { 'X-API-KEY': FUGLE_API_KEY }
                 });
 

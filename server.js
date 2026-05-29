@@ -90,7 +90,7 @@ async function checkPrices() {
 
     for (let user of users) {
         for (let config of user.configs) {
-            const symbol = config.symbol;         // 股票代號 (例: 2330)
+            const symbol = config.stockCode;         // 股票代號 (例: 2330)修改
             const periodMonths = parseInt(config.period); // 觀測時段 (例: 3 個月)
             const percentThreshold = parseFloat(config.percent); // 跌幅門檻 (例: 8%)
 

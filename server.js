@@ -61,7 +61,7 @@ app.get('/api/stock/:symbol', async (req, res) => {
     const symbol = req.params.symbol;
     try {
         // 呼叫富果行情 API 取得即時當日行情 (Intraday Quotes)
-        const response = await axios.get(`https://api.fugle.tw/marketdata/v1.0/stock/intraday/quotes/${symbol}`, {
+        const response = await axios.get(`https://api.fugle.tw/marketdata/v1.0/stock/intraday/quote/${symbol}`, {
             headers: { 'X-API-KEY': FUGLE_API_KEY }
         });
 

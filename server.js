@@ -161,7 +161,7 @@ async function checkPrices() {
                 }
 
             } catch (err) {
-                console.error(`❌ 監控股票 ${symbol} 時發生錯誤:`, err.message);
+                console.error(`❌  監控股票 ${symbol} 時發生錯誤:`, err.message);
             }
         }
     }

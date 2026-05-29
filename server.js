@@ -19,8 +19,8 @@ const FUGLE_API_KEY = process.env.FUGLE_API_KEY || 'NWYzYWU4YWEtNTMxMy00NmNjLWJl
 if (PUBLIC_VAPID_KEY && PRIVATE_VAPID_KEY) {
     webpush.setVapidDetails(
         'mailto:willie0eilliw@gmail.com', // 您的電子信箱
-        'BOqI-NMOQANwPM44bvi_XXkbaTaI4htRS4tooJcDD8MY6u2fJwNnnhl_RvjJNsdlXEuiodPQMzJMlhg961gJrzw',
-        'aYV7hfV0vnaUaWCmJxB0ZVbuwTh4F_s4Jq7bUtlPD_s'
+        PUBLIC_VAPID_KEY,
+        PRIVATE_VAPID_KEY
     );
     console.log('✅ Web Push VAPID 金鑰設定成功');
 } else {
